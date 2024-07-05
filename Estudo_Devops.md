@@ -59,6 +59,22 @@ O Jenkins gerencia e controla os processos de entrega de software em todo o cicl
 
 O Jenkins pode ser instalado em uma variedade de sistemas operacionais e ambientes, e sua configuração é realizada por meio de uma interface web amigável. Ele continua sendo uma ferramenta fundamental para equipes DevOps que buscam melhorar a eficiência e a qualidade de seus processos de desenvolvimento e entrega de software.
 
+> Jenkins permite criar tarefas na forma de scripts de texto simples (DLS - Piilene-as-code) escrito na liguagem Grovy.
+> 
+1. **Jenkins Pipeline – Pipeline como código no Jenkis**
+
+O Jenkins 2.0, pode ser instalado com alguns plugins empacotados que devem ser suficientes para cobrir a maioria das tarefas de [integração contínua e entrega contínua](https://blog.mandic.com.br/artigos/explorando-devops-com-foco-em-cicd/) para quase qualquer projeto de software.
+
+A maior mudança no Jenkins 2.0 é o novo recurso [Pipeline](https://jenkins.io/doc/book/pipeline/), que foi adicionado ao plugin padrão. Ele permite criar **tarefas Jenkins** na forma de scripts de texto simples (na verdade, é uma DSL (Pipilene-as-code) escrito em linguagem **Groovy**). Em vez de definir os passos na interface de usuário, é possível orquestrar os processos de integração contínua do commit à entrega usando scripts de pipeline poderosos – que são sistemas de controle de versão amigáveis e legíveis) e, em seguida, acompanhar o progresso e status diretamente no painel de **tarefas Jenkins**.
+
+1. **Jenkins e APM**
+
+Dentro da integração contínua e processo de entrega, o [gerenciamento de performance de aplicativos (APM)](https://en.wikipedia.org/wiki/Application_performance_management) pode desempenhar um papel importante nos testes de carga, [regressão](https://pt.wikipedia.org/wiki/Teste_de_regress%C3%A3o), [build](https://en.wikipedia.org/wiki/Build_verification_test), e de [unidade](https://pt.wikipedia.org/wiki/Teste_de_unidade), para conduzir ao teste de aceitação automatizada antes que o novo código suba para a produção.
+
+1. **Testes de desempenho e balanceamento com Jenkins**
+
+Adicionar testes de desempenho ao escopo de integração contínua ajuda a reduzir o risco de degradações de performance sempre que um novo recurso for adicionado ou a corrigir um bug de produto. O **Jenkins** é uma ferramenta ótima para integrar testes de desempenho e balanceamento no processo de integração contínua.
+
 ## SonarQube
 
 SonarQube é uma plataforma de análise estática de código que **fornece uma visão abrangente da qualidade do software**. Ele analisa o código-fonte em busca de problemas, como vulnerabilidades de segurança, bugs, dívida técnica e, é claro, cobertura de teste.
